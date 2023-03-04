@@ -81,7 +81,7 @@ while i < len(content):
         i += 1
         continue
     j = i + 1
-    while j < len(content) and content[j] in '0123456789.uldbx':
+    while j < len(content) and content[j] in 'abcdef0123456789.uldbx':
         j += 1
 
 
@@ -114,7 +114,7 @@ while i < len(content):
                     break
             bad = False
             for x in new_name:
-                if x.lower() not in 'abcdefghijklmnopqrtstuvwxyz0123456789':
+                if x.lower() not in 'abcdefghijklmnopqrtstuvwxyz0123456789_':
                     bad = True
                     print(FAIL + "[FAIL]  " + ENDC + ":  UNSUPPORTED SYMBOL : '" + x + "'")
                     break
