@@ -20,7 +20,7 @@ Couple of words before we get to it:
 
     There's a built-in check to ensure that the input and output file are different. It can be disabled with `--force` flag
 
-- Tools supports two dirrent styles of naming constants:
+- Tool supports two dirrent styles of naming constants:
     1) `define` style
     2) `enum` style
 
