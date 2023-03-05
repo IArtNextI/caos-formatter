@@ -26,7 +26,7 @@ if args.with_comments:
     args.interactive = True
 
 if args.file == args.out and not args.force:
-    print("Output file can't be equal to the input one")
+    print(FAIL + "[FAIL]  " + ENDC + ": Output file can't be equal to the input one")
     exit(0)
 
 if args.enum:
@@ -81,7 +81,7 @@ while i < len(content):
         i += 1
         continue
     j = i + 1
-    while j < len(content) and content[j] in 'abcdef0123456789.uldbx':
+    while j < len(content) and content[j] in '0123456789.uldbxabcdef':
         j += 1
 
 
